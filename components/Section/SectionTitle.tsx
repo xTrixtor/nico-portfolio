@@ -8,7 +8,7 @@ export default function SectionTitle(props: SectionTitleProps): JSX.Element {
   return (
     <>
       <div
-        className={`flex justify-center items-center text-6xl py-5 font-bold ${tailWindConf}`}
+        className={`flex justify-center items-center tablet:text-6xl text-3xl py-5 font-bold ${tailWindConf}`}
       >
         {title}
       </div>

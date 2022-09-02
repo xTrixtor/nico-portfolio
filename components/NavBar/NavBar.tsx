@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <NavBarFrame>
       <nav
-        className="h-[75px] items-center flex w-full justify-between bg-slate-700 fixed top-0 z-30 duration-300 font-bold"
+        className="h-[75px] items-center flex w-full justify-between bg-slate-700 tablet:fixed relative top-0 z-30 duration-300 font-bold"
         id="navBar"
       >
         <Col className="flex mx-5 relative items-center cursor-pointer font-medium">

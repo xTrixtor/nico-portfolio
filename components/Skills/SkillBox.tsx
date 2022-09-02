@@ -18,7 +18,7 @@ function SkillBox(skill: SkillModel): JSX.Element {
             ></i>
           </div>
         </div>
-        <div className="text-4xl text-center font-bold">{skill.name}</div>
+        <div className="tablet:text-4xl text-xl text-center font-bold">{skill.name}</div>
         <SkillModal
           title={skill.name}
           isOpen={showModal}
