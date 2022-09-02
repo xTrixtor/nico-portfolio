@@ -1,5 +1,3 @@
-export default function Test():JSX.Element{
-    return(
-        <></>
-    )
+export default function Test(): JSX.Element {
+  return <></>;
 }

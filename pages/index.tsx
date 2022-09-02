@@ -1,4 +1,4 @@
-import type {NextPage} from "next";
+import type { NextPage } from "next";
 import Header from "../components/Header/Header";
 import NavBar from "../components/NavBar/NavBar";
 import Landing from "../components/Landing/landing";
@@ -9,25 +9,23 @@ import SectionSeparator from "../components/Section/SectionSeparator";
 import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
-    return (
-        <>
-            <Header/>
+  return (
+    <>
+      <Header />
 
-            <NavBar/>
+      <NavBar />
 
-            <Landing/>
+      <Landing />
 
-            <CurriculumVitae/>
+      <CurriculumVitae />
 
-            <SectionSeparator/>
+      <SectionSeparator />
 
-            <Skills/>
+      <Skills />
 
-            <Contact/>
-
-        </>
-    );
+      <Contact />
+    </>
+  );
 };
 
 export default Home;
-

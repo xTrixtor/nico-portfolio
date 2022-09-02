@@ -1,6 +1,6 @@
-export interface ContactFormModel{
-    name?:string;
-    subject?:string;
-    email?:string;
-    message?:string;
+export interface ContactFormModel {
+  name?: string;
+  subject?: string;
+  email?: string;
+  message?: string;
 }

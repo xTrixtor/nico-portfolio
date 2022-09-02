@@ -7,24 +7,24 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-#landing{
+#landing {
   background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.8) 0%,
-          rgba(255, 255, 255, 0.3) 100%
-  ),
-  url("/images/bulb.jpg");
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url("/images/bulb.jpg");
   background-attachment: fixed;
 }
 
 .isSticky #navBar {
   background: linear-gradient(
-  to left bottom,
-  rgba(148,163,184,0.6),
-  rgba(148,163,184,0.3)
+    to left bottom,
+    rgba(148, 163, 184, 0.6),
+    rgba(148, 163, 184, 0.3)
   );
   @apply text-slate-700;
   @apply h-[60px];
@@ -204,23 +204,23 @@ body {
   }
 }
 
-#sectionSeparator{
+#sectionSeparator {
   background: linear-gradient(
-          to bottom,
-          rgba(116, 116, 116, 0.8) 0%,
-          rgba(0, 0, 15, 0.8) 100%
-  ),
-  url("/images/coding.jpg");
+      to bottom,
+      rgba(116, 116, 116, 0.8) 0%,
+      rgba(0, 0, 15, 0.8) 100%
+    ),
+    url("/images/coding.jpg");
   background-attachment: fixed;
 }
 
-#mileStone{
+#mileStone {
   background: linear-gradient(
-          to bottom,
-          rgba(116, 116, 116, 0.8) 0%,
-          rgba(0, 0, 15, 0.8) 100%
-  ),
-  url("/images/MileStoneBg.jpg");
+      to bottom,
+      rgba(116, 116, 116, 0.8) 0%,
+      rgba(0, 0, 15, 0.8) 100%
+    ),
+    url("/images/MileStoneBg.jpg");
   background-attachment: fixed;
 }
 
@@ -233,6 +233,6 @@ body {
   @apply bg-brand;
 }
 
-.contactForm:focus-within{
+.contactForm:focus-within {
   @apply text-brand;
 }
