@@ -31,6 +31,7 @@ function Landing() {
               Learn more
             </a>
             <a
+                href={"#contact"}
               className={`btn bg-[#4DBEE7] mx-5 text-white hover:-translate-y-2 duration-500 hover:bg-brand font-bold border-0 ${
                 myElementIsVisible ? " fadeAnimation" : ""
               }`}

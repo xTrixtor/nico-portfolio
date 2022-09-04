@@ -5,6 +5,9 @@ import { NavBarModel } from "../../models/NavBarModel";
 import { Col, Row } from "react-bootstrap";
 import NavBarFrame from "./NavBarFrame";
 
+
+
+
 function NavBar() {
   const [showNavBar, setShowNavBar] = useState(false);
   return (
@@ -22,7 +25,6 @@ function NavBar() {
             co Böhner
           </p>
         </Col>
-
         <Col className="">
           <ul className="tablet:flex hidden relative">
             {navBarData.map((navBarItem: NavBarModel) => (
@@ -35,7 +37,7 @@ function NavBar() {
           </ul>
         </Col>
         <i
-          className="fa-solid fa-bars tablet:hidden inline-flex px-4"
+          className={`${showNavBar?"fa-solid fa-xmark border-2":"fa-solid fa-bars"} text-2xl rounded-lg mx-auto tablet:hidden inline-flex px-4`}
           onClick={() => setShowNavBar(!showNavBar)}
         />
         <Col className="mx-5 hidden tablet:inline-flex">
@@ -54,19 +56,19 @@ function NavBar() {
         </Col>
       </nav>
       {showNavBar ? (
-        <Row className="flex items-center text-center w-full justify-center px-4 bg-base-300 font-medium relative bottom-0 z-10">
-          <ul className="items-center tablet:hidden">
-            {navBarData.map((navBarItem: NavBarModel) => (
-              <>
-                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand">
-                  <a href={navBarItem.href}>{navBarItem.title}</a>
-                </li>
-              </>
-            ))}
-          </ul>
-        </Row>
+          <div className="flex items-center text-center w-full justify-center px-4 bg-base-300 font-medium top-0 bottom-0 z-30">
+            <ul className="items-center tablet:hidden">
+              {navBarData.map((navBarItem: NavBarModel) => (
+                  <>
+                    <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand">
+                      <a href={navBarItem.href}>{navBarItem.title}</a>
+                    </li>
+                  </>
+              ))}
+            </ul>
+          </div>
       ) : (
-        <></>
+          <></>
       )}
     </NavBarFrame>
   );

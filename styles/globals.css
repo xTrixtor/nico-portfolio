@@ -18,12 +18,16 @@ body {
     ),
     url("/images/bulb.jpg");
   background-attachment: fixed;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center, center;
+
 }
 
 .isSticky #navBar {
   background: linear-gradient(
     to left bottom,
-    rgba(148, 163, 184, 0.6),
+    rgba(51, 65, 85, 0.6),
     rgba(148, 163, 184, 0.3)
   );
   @apply text-slate-700;
@@ -36,10 +40,9 @@ body {
 }
 
 .sexy_line {
+  position: relative;
   display: block;
-  border: none;
   color: white;
-  height: 1px;
   background: -webkit-gradient(
     radial,
     50% 50%,
@@ -74,19 +77,6 @@ body {
 .onRowFocus #mileStoneDesc {
   font-size: 1.25rem; /* 20px */
   line-height: 1.75rem; /* 28px */
-}
-
-#testSection {
-  background: linear-gradient(
-      to bottom,
-      rgba(116, 116, 116, 0.8) 0%,
-      rgba(0, 0, 15, 0.8) 100%
-    ),
-    url("/images/MileStoneBg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .modalAnimation {
@@ -212,6 +202,9 @@ body {
     ),
     url("/images/coding.jpg");
   background-attachment: fixed;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center, center;
 }
 
 #mileStone {
@@ -235,4 +228,10 @@ body {
 
 .contactForm:focus-within {
   @apply text-brand;
+}
+
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center, center;
 }
