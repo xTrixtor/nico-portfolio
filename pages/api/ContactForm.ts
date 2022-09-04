@@ -51,9 +51,12 @@ const sendEmail = async (
     "Nachricht: " +
     contactData.message;
 
+  if(process.env.PUBLIC_KEY_JETMAIL === null ||process.env.PRIVATE_KEY_JETMAIL === null)
+    sendResponse(res, 500, "MailJetKey is null")
+
   const mailjet = require("node-mailjet").connect(
-    "a688bda33f1bca989902cea1780dd146",
-    "aa3626a01b94fdf1a5a12ffcdfb43471"
+    process.env.PUBLIC_KEY_JETMAIL,
+    process.env.PRIVATE_KEY_JETMAIL
   );
   mailjet
     .post("send", { version: "v3.1" })
@@ -80,7 +83,9 @@ const sendEmail = async (
       sendResponse(res, 200, "Ok");
       return;
     })
-    .catch((err: any) => {});
+    .catch((err: any) => {
+      sendResponse(res, 500,err.message);
+    });
 };
 
 function sendResponse(
@@ -89,8 +94,6 @@ function sendResponse(
   message: string,
   data?: any
 ): void {
-  console.log("Sending API Response");
-  console.log("Status: " + status + " Message: " + message + " Data: " + data);
   const response = { status, message, data: data ?? null } as APIResponseModel;
   res.status(status).json(response);
 }
