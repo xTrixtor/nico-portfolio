@@ -18,7 +18,10 @@ export default class FormService {
       body: JSON.stringify({ name, email, subject, message }),
     };
 
-    return await fetch("https://nboehner.vercel.app/api/ContactForm", requestOptions)
+    return await fetch(
+      "https://nboehner.vercel.app/api/ContactForm",
+      requestOptions
+    )
       .then((response) => response.json())
       .catch((error) => {
         console.error("Error:", error);

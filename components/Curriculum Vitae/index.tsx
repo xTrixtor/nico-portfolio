@@ -43,7 +43,7 @@ export default function CurriculumVitae(): JSX.Element {
             const { ref: myRef, inView: myElementIsVisible } = useInView();
             return (
               <div
-                className="text-xl tracking-wide flex justify-center items-center px-5"
+                className="text-xl tracking-wide flex justify-center items-center pl-14"
                 ref={myRef}
               >
                 <div
@@ -56,25 +56,16 @@ export default function CurriculumVitae(): JSX.Element {
                       myElementIsVisible ? "glowUpAnimation" : ""
                     }`}
                   ></div>
-                  <CurriculumStepPoint
-                    tailWindConf="text-brand font-bold"
-                    onFocus={myElementIsVisible}
-                  >
+                  <CurriculumStepPoint tailWindConf="text-brand font-bold">
                     {curriculumData.title}
                   </CurriculumStepPoint>
-                  <CurriculumStepPoint
-                    tailWindConf={"flex font-bold"}
-                    onFocus={myElementIsVisible}
-                  >
+                  <CurriculumStepPoint tailWindConf={"flex font-bold"}>
                     {curriculumData.from} - {curriculumData.until}
                   </CurriculumStepPoint>
-                  <CurriculumStepPoint
-                    tailWindConf={"font-bold"}
-                    onFocus={myElementIsVisible}
-                  >
+                  <CurriculumStepPoint tailWindConf={"font-bold"}>
                     {curriculumData.company} (
                     <a
-                      className="text-brand text-base"
+                      className="text-brand text-sm"
                       href={curriculumData.companyHref}
                     >
                       Website
@@ -86,7 +77,9 @@ export default function CurriculumVitae(): JSX.Element {
                     return (
                       <div className={"flex"}>
                         <li className={"pl-10 text-brand list-desc"}></li>
-                        <div className={"font-semibold"}>{skill}</div>
+                        <div className={"font-semibold tablet:text-lg text-sm"}>
+                          {skill}
+                        </div>
                       </div>
                     );
                   })}
@@ -102,14 +95,15 @@ export default function CurriculumVitae(): JSX.Element {
 
 export interface PointProps {
   children: React.ReactNode;
-  onFocus: boolean;
   tailWindConf: string;
 }
 
 export function CurriculumStepPoint(props: PointProps): JSX.Element {
-  const { children, tailWindConf, onFocus } = props;
+  const { children, tailWindConf } = props;
   return (
-    <div className={`px-5 py-1 border-slate-300 ${tailWindConf}`}>
+    <div
+      className={`px-5 py-1 border-slate-300 tablet:text-xl text-base flex items-center ${tailWindConf}`}
+    >
       {children}
     </div>
   );
