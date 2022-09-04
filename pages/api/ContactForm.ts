@@ -52,8 +52,8 @@ const sendEmail = async (
     contactData.message;
 
   const mailjet = require("node-mailjet").connect(
-    process.env.PUBLIC_KEY_JETMAIL,
-    process.env.PRIVATE_KEY_JETMAIL
+    "a688bda33f1bca989902cea1780dd146",
+    "aa3626a01b94fdf1a5a12ffcdfb43471"
   );
   mailjet
     .post("send", { version: "v3.1" })
