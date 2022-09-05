@@ -20,7 +20,7 @@ function LandingText() {
                     <Row className="flex tablet:justify-start justify-center tablet:text-7xl text-2xl">
                         <div>
                             <p className="text-brand font-black">A software</p>
-                            <p className={"w-full text-start font-semibold"} id={"typeText"}>developer</p>
+                            <p className={"w-full tablet:text-start text-center font-semibold"} id={"typeText"}>developer</p>
                             <p className={"text-slate-200 font-semibold"}>from Germany.</p>
                         </div>
                     </Row>
