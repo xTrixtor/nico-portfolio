@@ -20,26 +20,7 @@ function Landing() {
             <LandingText />
           </Col>
         </Row>
-        <Row>
-          <div className="tablet:w-1/2 w-full flex justify-center z-20 py-5 ">
-            <a
-              href={"#aboutMe"}
-              className={`btn bg-[#4DBEE7] mx-5 text-white hover:-translate-y-2 duration-500 hover:bg-brand border-0 ${
-                myElementIsVisible ? " fadeAnimation" : ""
-              }`}
-            >
-              Learn more
-            </a>
-            <a
-              href={"#contact"}
-              className={`btn bg-[#4DBEE7] mx-5 text-white hover:-translate-y-2 duration-500 hover:bg-brand font-bold border-0 ${
-                myElementIsVisible ? " fadeAnimation" : ""
-              }`}
-            >
-              Contact me
-            </a>
-          </div>
-        </Row>
+
       </div>
     </div>
   );

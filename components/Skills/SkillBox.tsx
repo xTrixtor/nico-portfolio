@@ -1,6 +1,6 @@
 import { SkillModel } from "../../models/SkillModel";
 import { useState } from "react";
-import SkillModal from "./SkillModal.";
+import SkillModal from "./SkillModal";
 
 function SkillBox(skill: SkillModel): JSX.Element {
   const [showModal, setShowModal] = useState(false);

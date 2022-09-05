@@ -10,7 +10,7 @@ function LandingPicture(): JSX.Element {
           <div
             className={
               myElementIsVisible
-                ? "bg-brand rounded-full tablet:h-[400px] tablet:w-[400px] w-[250px] h-[250px] shadow-2xl absolute top-0 blueBallAnimation"
+                ? "bg-brand rounded-full tablet:h-[400px] tablet:w-[400px] w-[250px] h-[250px] shadow-2xl absolute top-0 blur-sm blueBallAnimation"
                 : ""
             }
           />

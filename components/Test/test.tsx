@@ -1,3 +1,6 @@
 export default function Test(): JSX.Element {
-  return <></>;
+  return (
+      <div className={"blur"}>
+      </div>
+  )
 }
