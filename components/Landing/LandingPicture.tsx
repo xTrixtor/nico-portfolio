@@ -19,7 +19,7 @@ function LandingPicture(): JSX.Element {
               src="images/Me.jpg"
               className={
                 myElementIsVisible
-                  ? "rounded-full tablet:w-[500px] tablet:h-[500px] w-[300px] h-[300px] tablet:right-0 z-10 tablet:mr-10 mt-5 tablet:meAnimation fadeInAnimation"
+                  ? "rounded-full tablet:w-[500px] tablet:h-[500px] w-[300px] h-[300px] tablet:right-0 z-10 tablet:mr-10 mt-5 fadeInAnimation"
                   : ""
               }
             />

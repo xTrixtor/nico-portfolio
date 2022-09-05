@@ -23,6 +23,25 @@ body {
   background-position: center, center;
 }
 
+#typeText{
+  @apply text-brand;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typewriter 2s steps(20) 1s 1 normal both,
+  blinkTextCursor 500ms steps(20) infinite
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
 .isSticky #navBar {
   background: linear-gradient(
     to left bottom,
@@ -118,11 +137,11 @@ body {
 }
 
 .fadeInAnimation {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: fadeAnimation, rightToPositionAnimation;
 }
 .fadeAnimation {
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: fadeAnimation;
 }
 
