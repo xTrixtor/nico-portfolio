@@ -261,7 +261,7 @@ img {
           rgba(0, 0, 0, 0.8) 0%,
           rgba(255, 255, 255, 0.2) 100%
   ),
-  url("/images/vacation.jpg");
+  url("/images/Vacation.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
