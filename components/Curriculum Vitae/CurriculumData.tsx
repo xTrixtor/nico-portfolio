@@ -31,7 +31,7 @@ export const CurriculumData: CurriculumModel[] = [
     companyHref: "https://tectiqom.de",
     from: "09.2018",
     until: renderUntilIcon("10.2021"),
-    skills: ["C#", ".Net", "HTML", "CSS", "Bootstrap", "TDD"],
+    skills: ["C#", ".Net", "HTML", "CSS", "Bootstrap", "TDD", "MVC","MVVM"],
   },
 ];
 
