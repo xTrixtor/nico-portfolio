@@ -12,7 +12,7 @@ export default function ProjectCard(project: ProjectModel):JSX.Element{
                         <div className={"w-full h-full flex justify-center flex-col items-center"}>
                             <div className={"text-white text-xl font-semibold py-3"}>
                                 <div className={"w-20 h-20 rounded-full bg-brand/[.8] flex justify-center items-center border-4 border-white"}>
-                                    <Counter endCount={`${year}`} duration={"3"}/>
+                                    <Counter endCount={`${year}`} duration={"3"} visible={visible}/>
                                 </div>
                             </div>
                             <div className={"text-white tablet:text-xl text-base font-semibold py-3"}>
