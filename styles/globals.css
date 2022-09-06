@@ -261,14 +261,14 @@ img {
           rgba(0, 0, 0, 0.8) 0%,
           rgba(255, 255, 255, 0.2) 100%
   ),
-  url("/images/projects/vacation.jpg");
+  url("/images/vacation.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
 }
 .bg-block{
   background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.4) 100%),
-  url("/images/projects/block.jpg");
+  url("/images/block.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -276,7 +276,7 @@ img {
 
 .bg-statistic{
   background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.2) 100%),
-  url("/images/projects/statistic.jpg");
+  url("/images/statistic.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -284,7 +284,7 @@ img {
 
 .bg-portfolio{
   background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.2) 100%),
-  url("/images/projects/portfolio.jpg");
+  url("/images/portfolio.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
