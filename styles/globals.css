@@ -38,7 +38,7 @@ body {
   to{width: 100%;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: #ff751a;}
   to{border-right-color: transparent;}
 }
 
@@ -70,19 +70,6 @@ body {
     from(#70c2e7),
     to(hsl(var(--b1)))
   );
-}
-
-
-.onRowFocus #mileStone #experienceCircle {
-  border-radius: 1.5rem;
-  color: white;
-  border-right-width: 2px;
-  border-left-width: 2px;
-  animation-duration: 3s;
-}
-.onRowFocus #mileStoneDesc {
-  font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
 }
 
 .modalAnimation {
@@ -128,6 +115,14 @@ body {
   animation-duration: 2s;
   animation-name: fadeAnimation, rightToPositionAnimation;
 }
+.fadeFromTopAnimation {
+  animation-duration: 2s;
+  animation-name: fadeAnimation, TopToPositionAnimation;
+}
+.fadeFromBottomAnimation {
+  animation-duration: 2s;
+  animation-name: fadeAnimation, BottomToPositionAnimation;
+}
 .fadeAnimation {
   animation-duration: 1s;
   animation-name: fadeAnimation;
@@ -141,6 +136,24 @@ body {
     opacity: 1;
   }
 }
+@keyframes TopToPositionAnimation {
+  0% {
+    transform: translate(0px, -300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes BottomToPositionAnimation {
+  0% {
+    transform: translate(0px, 300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 @keyframes rightToPositionAnimation {
   0% {
     transform: translate(-200px, 0);

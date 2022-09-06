@@ -8,7 +8,7 @@ export const projectData:ProjectModel[] = [
         year:2020,
         background:"bg-block",
         technologies:["Java","Nuclos","PostgresSQL","C#",".Net"],
-        finished:true
+        animation:"fadeFromTopAnimation"
     },
     {
         name:"Urlaubsportal",
@@ -16,7 +16,7 @@ export const projectData:ProjectModel[] = [
         year:2021,
         background:"bg-vacation",
         technologies:[".Net","C#","Dapper","SQL", "Stored-Procedure", "Views"],
-        finished:true
+        animation:"fadeFromBottomAnimation"
     },
     {
         name:"Project Name 1",
@@ -24,7 +24,7 @@ export const projectData:ProjectModel[] = [
         year:2022,
         background:"bg-statistic",
         technologies:[".Net","C#","Blazor","DevExpress","Bootstrap"],
-        finished:true
+        animation:"fadeInAnimation"
     },
     {
         name:"Portfolio",
@@ -32,6 +32,6 @@ export const projectData:ProjectModel[] = [
         year:2022,
         background:"bg-portfolio",
         technologies:["React.JS","Next.Js","Tailwind","Cypress"],
-        finished:true
+        animation:"fadeFromTopAnimation"
     },
 ]

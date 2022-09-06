@@ -1,17 +1,17 @@
 import Counter from "../Count";
 import React from "react";
 import {ProjectModel} from "../../models/ProjectModel";
+import {useInView} from "react-intersection-observer";
 
 export default function ProjectCard(project: ProjectModel):JSX.Element{
-    const {background, year, name, desc, technologies} = project;
+    const {background, year, name, desc, technologies,visible,animation} = project;
     return(
-            <div className={"w-full h-full flex justify-center items-center" +
-                ""}>
+            <div className={`w-full h-full flex justify-center items-center ${visible?`${animation}`:""}`}>
                 <div className={"h-full w-[90%] flex flex-col items-center justify-center bg-slate-300/[.2] rounded-lg p-2"}>
                     <div className={`w-full h-full flex bg-cover bg-center object-cover ${background} rounded-lg border-2 border-brand`}>
                         <div className={"w-full h-full flex justify-center flex-col items-center"}>
                             <div className={"text-white text-xl font-semibold py-3"}>
-                                <div className={"w-20 h-20 rounded-full bg-brand/[.8] flex justify-center items-center border-4"}>
+                                <div className={"w-20 h-20 rounded-full bg-brand/[.8] flex justify-center items-center border-4 border-white"}>
                                     <Counter endCount={`${year}`} duration={"3"}/>
                                 </div>
                             </div>
