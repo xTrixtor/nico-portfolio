@@ -5,8 +5,16 @@ import {useInView} from "react-intersection-observer";
 
 export default function ProjectCard(project: ProjectModel):JSX.Element{
     const {background, year, name, desc, technologies,visible,animation} = project;
+    function IsMobil(): boolean {
+        if (typeof window !== "undefined") {
+            const windowWidth = window.innerWidth;
+            console.log(windowWidth < 991);
+            return windowWidth < 991;
+        }
+        return false;
+    }
     return(
-            <div className={`w-full h-full flex justify-center items-center ${visible?`${animation}`:""}`}>
+            <div className={IsMobil()?"w-full h-full flex justify-center items-center":`w-full h-full flex justify-center items-center ${visible?`${animation}`:""}`}>
                 <div className={"h-full w-[90%] flex flex-col items-center justify-center bg-slate-300/[.2] rounded-lg p-2"}>
                     <div className={`w-full h-full flex bg-cover bg-center object-cover ${background} rounded-lg border-2 border-brand`}>
                         <div className={"w-full h-full flex justify-center flex-col items-center"}>
