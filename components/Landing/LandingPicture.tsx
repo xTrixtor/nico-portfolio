@@ -11,7 +11,7 @@ function LandingPicture(): JSX.Element {
             className={
               myElementIsVisible
                 ? "bg-brand rounded-full tablet:h-[400px] tablet:w-[400px] w-[250px] h-[250px] shadow-2xl absolute top-0 blur-sm blueBallAnimation"
-                : ""
+                : "hidden"
             }
           />
           {myElementIsVisible ? (
@@ -26,7 +26,7 @@ function LandingPicture(): JSX.Element {
           ) : (
             <div
               className={
-                "rounded-full tablet:w-[500px] tablet:h-[500px] w-[300px] h-[300px] tablet:right-0 z-10 tablet:mr-10 mt-5 bg-brand"
+                "rounded-full tablet:w-[500px] tablet:h-[500px] w-[300px] h-[300px] tablet:right-0 z-10 tablet:mr-10 mt-5 bg-transparent"
               }
             ></div>
           )}

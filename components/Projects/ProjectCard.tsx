@@ -1,14 +1,12 @@
 import Counter from "../../public/images";
 import React from "react";
 import {ProjectModel} from "../../models/ProjectModel";
-import {useInView} from "react-intersection-observer";
 
 export default function ProjectCard(project: ProjectModel):JSX.Element{
     const {background, year, name, desc, technologies,visible,animation} = project;
     function IsMobil(): boolean {
         if (typeof window !== "undefined") {
             const windowWidth = window.innerWidth;
-            console.log(windowWidth < 991);
             return windowWidth < 991;
         }
         return false;
@@ -30,14 +28,16 @@ export default function ProjectCard(project: ProjectModel):JSX.Element{
                                 {desc}
                             </div>
                             <div className={""}>
-                                <div className={"tablet:text-xl text-base text-brand font-semibold"}>Genutzte Technologien:</div>
-                                {technologies.map((technology:string):JSX.Element =>{
-                                    return(
-                                        <div className={"flex justify-start items-center grow"}>
-                                            <div className={"text-white font-semibold py-1 tablet:text-xl text-sm grow text-center"}>{technology}</div>
-                                        </div>
-                                    )
-                                })}
+                                <div className={"tablet:text-xl text-base text-brand font-semibold text-center"}>Genutzte Technologien:</div>
+                                <div className={"grid grid-cols-2"}>
+                                    {technologies.map((technology:string):JSX.Element =>{
+                                        return(
+                                            <div className={"flex justify-start items-center grow"}>
+                                                <div className={"text-white font-semibold py-1 tablet:text-xl text-sm grow text-center"}>{technology}</div>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>

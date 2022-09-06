@@ -7,7 +7,7 @@ export const projectData:ProjectModel[] = [
         desc:"Dynamisches zusammensetzen eines Leitfadens anhand von Parameter",
         year:2020,
         background:"bg-block",
-        technologies:["Java","Nuclos","PostgresSQL","C#",".Net"],
+        technologies:[".Net","C#","SQL","Dapper"],
         animation:"fadeFromTopAnimation"
     },
     {
@@ -15,15 +15,15 @@ export const projectData:ProjectModel[] = [
         desc:"Verwaltung der Urlaube mit einem Click",
         year:2021,
         background:"bg-vacation",
-        technologies:[".Net","C#","Dapper","SQL", "Stored-Procedure", "Views"],
+        technologies:[".Net","C#","Dapper","SQL"],
         animation:"fadeFromBottomAnimation"
     },
     {
-        name:"Project Name 1",
+        name:"Statistik Portal",
         desc:"Web-Applkation zur Veranschaulichung von Daten",
         year:2022,
         background:"bg-statistic",
-        technologies:[".Net","C#","Blazor","DevExpress","Bootstrap"],
+        technologies:[".Net","C#","Blazor","DevExpress"],
         animation:"fadeInAnimation"
     },
     {
