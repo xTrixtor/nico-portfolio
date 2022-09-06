@@ -1,6 +1,5 @@
 import { CounterModel } from "../../models/CounterModel";
 import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 export default function Counter(counter: CounterModel): JSX.Element {
   const { endCount, duration } = counter;
