@@ -4,5 +4,6 @@ export interface ProjectModel{
     year:number;
     background:string;
     technologies:string[];
-    finished?:boolean;
+    visible?:boolean;
+    animation:string;
 }
