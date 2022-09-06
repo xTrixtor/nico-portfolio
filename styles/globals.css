@@ -289,3 +289,15 @@ img {
   background-size: cover;
   background-position: center;
 }
+
+#footer{
+  background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(64, 64, 64, 0.5) 100%
+  ),
+  url("/images/light.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}

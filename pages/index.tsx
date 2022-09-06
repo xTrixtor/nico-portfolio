@@ -7,6 +7,7 @@ import CurriculumVitae from "../components/Curriculum Vitae";
 import SectionSeparator from "../components/Section/SectionSeparator";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
     return (
@@ -26,6 +27,8 @@ const Home: NextPage = () => {
             <SectionSeparator/>
 
             <Contact/>
+
+            <Footer/>
         </>
     );
 };
