@@ -2,7 +2,7 @@ import Section from "../Section";
 import {ProjectModel} from "../../models/ProjectModel";
 import {projectData} from "./ProjectData";
 import React from "react";
-import Counter from "../Count";
+import Counter from "../../public/images";
 import ProjectCard from "./ProjectCard";
 import {useInView} from "react-intersection-observer";
 

@@ -1,4 +1,4 @@
-import Counter from "../Count";
+import Counter from "../../public/images";
 import React from "react";
 import {ProjectModel} from "../../models/ProjectModel";
 import {useInView} from "react-intersection-observer";
