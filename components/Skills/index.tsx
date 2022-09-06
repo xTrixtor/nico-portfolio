@@ -7,7 +7,7 @@ import Section from "../Section";
 class Skills extends Component {
   render() {
     return (
-      <Section id="skills" title={"My Skills"}>
+      <Section id="skills" title={"Skills"}>
         <div className="grid tablet:grid-cols-5 grid-cols-2">
           {skillsData.map((skill: SkillModel, key: number): JSX.Element => {
             return (

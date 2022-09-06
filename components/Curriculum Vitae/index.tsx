@@ -6,7 +6,7 @@ import Section from "../Section";
 
 export default function CurriculumVitae(): JSX.Element {
   return (
-    <Section id={"aboutMe"} title={"About Me"}>
+    <Section id={"aboutMe"} title={"Über mich"}>
       <div className={"grid tablet:grid-cols-3 grid-cols-1 mx-8"}>
         <div className={`flex-col col-span-2 py-5`}>
           <div className={"flex w-full justify-center"}>

@@ -42,7 +42,7 @@ export default function Contact(): JSX.Element {
   }
 
   return (
-    <Section id={"contact"} title={"Contact"}>
+    <Section id={"contact"} title={"Kontakt"}>
       <div
         className={
           "flex flex-row w-full tablet:h-[80vh] h-full flex-wrap justify-center"
@@ -105,7 +105,7 @@ export default function Contact(): JSX.Element {
                     "mx-5 py-3 font-semibold tablet:text-3xl text-xl text-white flex justify-center"
                   }
                 >
-                  Contact Form
+                  Kontaktformular
                 </div>
                 <div className={"flex-col justify-center w-full"}>
                   <div
@@ -113,7 +113,7 @@ export default function Contact(): JSX.Element {
                       "mx-5 font-semibold tablet:text-lg text-sm text-white py-1"
                     }
                   >
-                    Your Name
+                    Name:
                   </div>
                   <div className={"flex"}>
                     <input
@@ -143,7 +143,7 @@ export default function Contact(): JSX.Element {
                       "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
                     }
                   >
-                    Your Subject
+                    Betreff:
                   </div>
                   <div className={"flex"}>
                     <input
@@ -181,7 +181,7 @@ export default function Contact(): JSX.Element {
                       "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
                     }
                   >
-                    Your Email
+                    Email:
                   </div>
                   <div className={"flex"}>
                     <input
@@ -215,7 +215,7 @@ export default function Contact(): JSX.Element {
                       "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
                     }
                   >
-                    Your message
+                    Nachricht:
                   </div>
                   <div className={"flex h-full"}>
                     <textarea
@@ -250,7 +250,7 @@ export default function Contact(): JSX.Element {
                         <img src="/loading.svg" className="w-8" />
                       </>
                     ) : (
-                      <>Submit</>
+                      <>Senden</>
                     )}
                   </button>
                 </div>
