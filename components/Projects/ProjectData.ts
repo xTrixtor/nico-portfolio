@@ -1,33 +1,37 @@
 import {ProjectModel} from "../../models/ProjectModel";
 
 export const projectData:ProjectModel[] = [
+
+    {
+        name:"TextBlock Leitfaden",
+        desc:"Dynamisches zusammensetzen eines Leitfadens anhand von Parameter",
+        year:2020,
+        background:"bg-block",
+        technologies:["Java","Nuclos","PostgresSQL","C#",".Net"],
+        finished:true
+    },
+    {
+        name:"Urlaubsportal",
+        desc:"Verwaltung der Urlaube mit einem Click",
+        year:2021,
+        background:"bg-vacation",
+        technologies:[".Net","C#","Dapper","SQL", "Stored-Procedure", "Views"],
+        finished:true
+    },
     {
         name:"Project Name 1",
         desc:"Web-Applkation zur Veranschaulichung von Daten",
         year:2022,
+        background:"bg-statistic",
         technologies:[".Net","C#","Blazor","DevExpress","Bootstrap"],
-        tailWindConfig:"tablet:flex-row flex-col"
-
-    },
-    {
-        name:"Project Name 2",
-        desc:"Hier steht eine Beschreibung des Projektes",
-        year:2022,
-        technologies:["Java","Nuclos","PostgresSQL","C#",".Net"],
-        tailWindConfig:"tablet:flex-row-reverse flex-col"
-    },
-    {
-        name:"Urlaubstool",
-        desc:"Urlaub",
-        year:2018,
-        technologies:[".Net","C#","Dapper","SQL", "Stored-Procedure", "Views"],
-        tailWindConfig:"tablet:flex-row flex-col"
+        finished:true
     },
     {
         name:"Portfolio",
-        desc:"",
+        desc:"Ein kleine Präsenz im Internet",
         year:2022,
+        background:"bg-portfolio",
         technologies:["React.JS","Next.Js","Tailwind","Cypress"],
-        tailWindConfig:"tablet:flex-row-reverse flex-col"
+        finished:true
     },
 ]

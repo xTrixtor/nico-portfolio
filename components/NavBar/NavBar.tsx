@@ -15,12 +15,14 @@ function NavBar() {
       >
         <Col className="flex mx-5 relative items-center cursor-pointer font-medium">
           <div className="bg-brand rounded-full h-10 w-10 absolute flex" />
-          <p className="pl-2 text-3xl font-[Montserrat-Alternates] z-10 text-white">
-            Ni
-          </p>
-          <p className="text-3xl font-[Montserrat-Alternates] z-10 tracking-widest text-slate-300">
-            co Böhner
-          </p>
+          <a className={"flex"} href={"/"}>
+            <p className="pl-2 text-3xl font-[Montserrat-Alternates] z-10 text-white">
+              Ni
+            </p>
+            <p className="text-3xl font-[Montserrat-Alternates] z-10 tracking-widest text-slate-300">
+              co Böhner
+            </p>
+          </a>
         </Col>
         <Col className="">
           <ul className="tablet:flex hidden relative">
@@ -59,7 +61,7 @@ function NavBar() {
           <ul className="items-center tablet:hidden">
             {navBarData.map((navBarItem: NavBarModel) => (
               <>
-                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand">
+                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand font-semibold">
                   <a href={navBarItem.href}>{navBarItem.title}</a>
                 </li>
               </>
