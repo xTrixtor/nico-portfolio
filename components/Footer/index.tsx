@@ -5,8 +5,8 @@ import Section from "../Section";
 export default function Footer(): JSX.Element {
     return (
             <div className={"w-full h-full py-10"} id={"footer"}>
-                <div className={"flex flex-col justify-center items-center text-white text-xl py-2"}>
-                    <div className={"flex text-6xl text-white font-bold py-2"}>
+                <div className={"flex flex-col justify-center items-center text-white tablet:text-xl text-base py-2 text-center"}>
+                    <div className={"flex tablet:text-6xl text-3xl text-white font-bold py-2"}>
                         Böhner Nico
                     </div>
                     <div>
