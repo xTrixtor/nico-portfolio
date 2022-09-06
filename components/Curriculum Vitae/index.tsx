@@ -62,10 +62,10 @@ export default function CurriculumVitae(): JSX.Element {
                   <CurriculumStepPoint tailWindConf={"flex font-bold"}>
                     {curriculumData.from} - {curriculumData.until}
                   </CurriculumStepPoint>
-                  <CurriculumStepPoint tailWindConf={"font-bold"}>
+                  <CurriculumStepPoint tailWindConf={"font-bold text-xs"}>
                     {curriculumData.company} (
                     <a
-                      className="text-brand text-sm"
+                      className="text-brand text-xs"
                       href={curriculumData.companyHref}
                     >
                       Website
@@ -102,7 +102,7 @@ export function CurriculumStepPoint(props: PointProps): JSX.Element {
   const { children, tailWindConf } = props;
   return (
     <div
-      className={`px-5 py-1 border-slate-300 tablet:text-xl text-base flex items-center ${tailWindConf}`}
+      className={`px-5 py-1 border-slate-300 tablet:text-xl text-sm flex items-center ${tailWindConf}`}
     >
       {children}
     </div>

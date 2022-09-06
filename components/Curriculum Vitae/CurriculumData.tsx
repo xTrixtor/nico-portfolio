@@ -3,7 +3,7 @@ import { CurriculumModel } from "../../models/CurriculumModel";
 export const CurriculumData: CurriculumModel[] = [
   {
     title: "Frontend Developer",
-    company: "Kerberry GmbH",
+    company: "Kerberry",
     companyHref: "https://www.kerberry.de",
     from: "05.2022",
     until: renderUntilIcon(),

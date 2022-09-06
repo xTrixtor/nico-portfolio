@@ -20,7 +20,7 @@ body {
   background-attachment: fixed;
   object-fit: cover;
   background-size: cover;
-  background-position: center, center;
+  background-position: center;
 }
 
 #typeText{
@@ -72,18 +72,6 @@ body {
   );
 }
 
-#mileStoneBg {
-  background: linear-gradient(
-      to bottom,
-      rgba(116, 116, 116, 0.8) 0%,
-      rgba(0, 0, 15, 0.8) 100%
-    ),
-    url("/images/MileStoneBg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 
 .onRowFocus #mileStone #experienceCircle {
   border-radius: 1.5rem;
