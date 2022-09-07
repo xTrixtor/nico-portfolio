@@ -1,9 +1,8 @@
-import {FooterConfig} from "./FooterConfig";
-import {FooterModel} from "../../models/FooterModel";
-import Section from "../Section";
+import {Component} from "react";
 
-export default function Footer(): JSX.Element {
-    return (
+class Footer extends Component{
+    render() {
+        return (
             <div className={"w-full h-full py-10"} id={"footer"}>
                 <div className={"flex flex-col justify-center items-center text-white tablet:text-xl text-base py-2 text-center"}>
                     <div className={"flex tablet:text-6xl text-3xl text-white font-bold py-2"}>
@@ -22,14 +21,17 @@ export default function Footer(): JSX.Element {
                         </a>
                     </div>
                     <div className={"py-2"}>
-                        <p>© 2022 Nico Böhner. Alle Rechte vorbehalten.</p>
+                        <div>© 2022 Nico Böhner. Alle Rechte vorbehalten.</div>
                     </div>
                     <div className={"flex"}>
-                        <p className={"flex"}>Designed by
-                            <p className={"text-brand ml-1"}>Böhner Nico</p>
-                        </p>
+                        <div className={"flex"}>Designed by
+                            <div className={"text-brand ml-1"}>Böhner Nico</div>
+                        </div>
                     </div>
                 </div>
             </div>
-    )
+        )
+    }
 }
+
+export default Footer;
