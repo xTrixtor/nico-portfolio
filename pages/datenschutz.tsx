@@ -1,20 +1,23 @@
+import Footer from "../components/Footer";
+
 export default function datenschutz(): JSX.Element {
     return (
-            <div className={"text-center"}>
-                <div id={"footer"}>
-                    <div className={"text-3xl text-white font-bold py-5"}>
-                        Datenschutz
-                        <div
-                            id={"titleUnderline"}
-                            className={"flex justify-center items-center pb-3"}
-                        />
-                    </div>
-
-                    <div className={"pb-3"}>
-                        <a className={"btn btn-primary bg-brand duration-500 hover:bg-slate-400 border-0 hover:-translate-y-2"} href={"/"}>Zurück zur Hauptseite</a>
-                    </div>
+        <div className={"text-center"}>
+            <div id={"footer"}>
+                <div className={"text-3xl text-white font-bold py-5"}>
+                    Datenschutz
+                    <div
+                        id={"titleUnderline"}
+                        className={"flex justify-center items-center pb-3"}
+                    />
                 </div>
-
+                <div className={"pb-3"}>
+                    <a className={"btn btn-primary bg-brand duration-500 hover:bg-slate-400 border-0 hover:-translate-y-2 fa-regular fa-right-from-bracket"}
+                       href={"/"}>Zurück
+                    </a>
+                </div>
+            </div>
+            <div className={"py-10 px-5 tablet:font-medium tablet:text-lg font-thin text-sm"}>
                 <h1>Datenschutzerklärung</h1><p>Wie wir mit Ihren personenbezogenen Daten umgehen, erläutern wir Ihnen
                 in dieser Datenschutzerklärung. Maßgabe ist das geltende Datenschutzrecht, insbesondere die
                 Datenschutz-Grundverordnung (DSGVO). Mit Ausnahme der Dienstleister und Drittanbieter, die wir in dieser
@@ -71,8 +74,8 @@ export default function datenschutz(): JSX.Element {
                 </ul>
                 <p>Die Verarbeitung dieser Daten ist erforderlich, um die Webseite an den Nutzer auszuliefern und für
                     sein Endgerät zu optimieren. Wir speichern keine personenbezogenen Daten in Logfiles.<br/>Rechtsgrundlage
-                        für die Verarbeitung ist Art.&nbsp;6 Abs.&nbsp;1 UAbs.&nbsp;1 Buchst.&nbsp;f) DSGVO. Unser
-                        berechtigtes Interesse besteht in der Bereitstellung der Webseite.</p><h2
+                    für die Verarbeitung ist Art.&nbsp;6 Abs.&nbsp;1 UAbs.&nbsp;1 Buchst.&nbsp;f) DSGVO. Unser
+                    berechtigtes Interesse besteht in der Bereitstellung der Webseite.</p><h2
                 id="cookies-zaehlpixel-und-mobile-identifier">Cookies, Zählpixel und Mobile Identifier</h2><p>Auf
                 unserer Webseite setzen wir Technologien ein, um das genutzte Endgerät wiederzuerkennen. Es kann sich
                 dabei um Cookies, Zählpixel und/oder Mobile Identifier handeln. </p><p>Das Wiedererkennen eines
@@ -170,5 +173,7 @@ export default function datenschutz(): JSX.Element {
                 Generator von <a href="https://www.einfach-abmahnsicher.de">Einfach Abmahnsicher</a> in Kooperation
                 mit <a href="https://www.prigge-recht.de">PRIGGE Recht</a> erstellt.</p>
             </div>
+            <Footer/>
+        </div>
     )
 }
