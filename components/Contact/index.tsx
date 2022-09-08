@@ -74,7 +74,7 @@ export default function Contact(): JSX.Element {
                       </div>
                       <div
                         className={
-                          "flex justify-start items-center w-full tablet:text-xl font-semibold text-sm"
+                          "flex justify-start items-center w-full tablet:text-xl font-semibold text-sm dark:text-white text-white"
                         }
                       >
                         <a href={contactOption.href}>{contactOption.name}</a>
