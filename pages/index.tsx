@@ -8,6 +8,7 @@ import SectionSeparator from "../components/Section/SectionSeparator";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import HomeButton from "../components/Home/HomeButton";
 
 const Home: NextPage = () => {
     return (
@@ -29,6 +30,8 @@ const Home: NextPage = () => {
             <Contact/>
 
             <Footer/>
+
+            <HomeButton/>
         </>
     );
 };

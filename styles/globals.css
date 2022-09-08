@@ -117,7 +117,7 @@ body {
 }
 
 .blueBallAnimation {
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-name: fadeAnimation, lightRightToPositionAnimation;
 }
 
