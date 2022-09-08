@@ -13,13 +13,13 @@ function NavBar() {
         className="h-[75px] items-center flex w-full justify-between bg-slate-700 tablet:fixed relative top-0 z-30 duration-300 font-bold"
         id="navBar"
       >
-        <Col className="flex mx-5 relative items-center cursor-pointer font-medium">
+        <Col className="flex mx-5 relative items-center cursor-pointer">
           <div className="bg-brand rounded-full h-10 w-10 absolute flex" />
           <a className={"flex"} href={"/"}>
-            <p className="pl-2 text-3xl font-[Montserrat-Alternates] z-10 text-white">
+            <p className="pl-1 text-3xl z-10 text-white">
               Ni
             </p>
-            <p className="text-3xl font-[Montserrat-Alternates] z-10 tracking-widest text-slate-300">
+            <p className="text-3xl z-10 tracking-widest text-slate-300">
               co Böhner
             </p>
           </a>

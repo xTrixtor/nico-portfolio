@@ -42,15 +42,25 @@ body {
   to{border-right-color: transparent;}
 }
 
-.isSticky #navBar {
+.isSticky #navBar{
   background: linear-gradient(
     to left bottom,
     rgba(51, 65, 85, 0.6),
     rgba(148, 163, 184, 0.3)
   );
-  @apply text-slate-700;
+  @apply bg-gradient-to-b from-slate-500/[.3] to-slate-600/[.8];
   @apply h-[60px];
+}
+
+.isSticky #navBar a{
+  @apply text-white;
+  @apply dark:text-white;
   @apply font-bold;
+}
+
+.isSticky #navBar i{
+  @apply text-white;
+  @apply dark:text-white;
 }
 
 .isSticky #navBar li:hover {

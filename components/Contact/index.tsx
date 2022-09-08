@@ -59,7 +59,7 @@ export default function Contact(): JSX.Element {
                 return (
                   <div
                     className={
-                      "flex-row flex bg-slate-800 rounded-lg my-3 tablet:mx-8 mx-3 border-white border-2 shadow-md shadow-slate-50/50"
+                      "flex-row flex dark:bg-slate-800 bg-slate-100 rounded-lg my-3 tablet:mx-8 mx-3 border-white border-2 shadow-md shadow-slate-50/50"
                     }
                   >
                     <div className={"flex justify-start w-full "}>
@@ -74,7 +74,7 @@ export default function Contact(): JSX.Element {
                       </div>
                       <div
                         className={
-                          "flex justify-start items-center w-full tablet:text-xl font-semibold text-sm dark:text-white text-white"
+                          "flex justify-start items-center w-full tablet:text-xl font-semibold text-sm dark:text-white text-black"
                         }
                       >
                         <a href={contactOption.href}>{contactOption.name}</a>
@@ -96,13 +96,13 @@ export default function Contact(): JSX.Element {
           >
             <div
               className={
-                "h-full bg-slate-800 tablet:w-3/4 w-full mx-3 rounded-lg shadow-md shadow-slate-50/50 border-2 focus:outline-none focus:border-brand duration-300"
+                "h-full dark:bg-slate-800 bg-slate-200 tablet:w-3/4 w-full mx-3 rounded-lg shadow-md shadow-slate-50/50 border-2 focus:outline-none focus:border-brand duration-300"
               }
             >
               <div className={"flex-col h-full flex"}>
                 <div
                   className={
-                    "mx-5 py-3 font-semibold tablet:text-3xl text-xl text-white flex justify-center"
+                    "mx-5 py-3 font-semibold tablet:text-3xl text-xl dark:text-white text-black flex justify-center"
                   }
                 >
                   Kontaktformular
@@ -110,7 +110,7 @@ export default function Contact(): JSX.Element {
                 <div className={"flex-col justify-center w-full"}>
                   <div
                     className={
-                      "mx-5 font-semibold tablet:text-lg text-sm text-white py-1"
+                      "mx-5 font-semibold tablet:text-lg text-sm dark:text-white text-black py-1"
                     }
                   >
                     Name:
@@ -124,7 +124,7 @@ export default function Contact(): JSX.Element {
                         },
                       })}
                       className={
-                        "w-full mx-5 font-semibold px-3 py-1 bg-slate-600 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300"
+                        "w-full mx-5 font-semibold px-3 py-1 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300 dark:bg-slate-600 bg-slate-100"
                       }
                       placeholder={"Max Mustermann"}
                     />
@@ -140,7 +140,7 @@ export default function Contact(): JSX.Element {
                 <div className={"flex-col justify-center w-full"}>
                   <div
                     className={
-                      "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
+                      "py-1 mx-5 font-semibold tablet:text-lg text-sm dark:text-white text-black"
                     }
                   >
                     Betreff:
@@ -163,7 +163,7 @@ export default function Contact(): JSX.Element {
                         },
                       })}
                       className={
-                        "w-full mx-5 font-semibold px-3 py-1 mx-5 bg-slate-600 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300"
+                        "w-full mx-5 font-semibold px-3 py-1 mx-5 dark:bg-slate-600 bg-slate-100 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300"
                       }
                     />
                   </div>
@@ -178,7 +178,7 @@ export default function Contact(): JSX.Element {
                 <div className={"flex-col justify-center w-full"}>
                   <div
                     className={
-                      "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
+                      "py-1 mx-5 font-semibold tablet:text-lg text-sm dark:text-white text-black"
                     }
                   >
                     Email:
@@ -197,7 +197,7 @@ export default function Contact(): JSX.Element {
                         },
                       })}
                       className={
-                        "w-full mx-5 font-semibold px-3 py-1 mx-5 bg-slate-600 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300"
+                        "w-full mx-5 font-semibold px-3 py-1 mx-5 dark:bg-slate-600 bg-slate-100 rounded-lg border-2 focus:border-brand focus:outline-none focus:border-brand duration-300"
                       }
                     />
                   </div>
@@ -212,7 +212,7 @@ export default function Contact(): JSX.Element {
                 <div className={"flex-col flex w-full tablet:h-full h-[200px]"}>
                   <div
                     className={
-                      "py-1 mx-5 font-semibold tablet:text-lg text-sm text-white"
+                      "py-1 mx-5 font-semibold tablet:text-lg text-sm dark:text-white text-black"
                     }
                   >
                     Nachricht:
@@ -226,7 +226,7 @@ export default function Contact(): JSX.Element {
                         },
                       })}
                       className={
-                        "h-full mx-5 font-semibold tablet:text-base text-sm p-2 w-full rounded-lg focus:ring-brand text-white border-2 focus:outline-none focus:border-brand duration-300 bg-slate-600"
+                        "h-full mx-5 font-semibold tablet:text-base text-sm p-2 w-full rounded-lg focus:ring-brand text-white border-2 focus:outline-none focus:border-brand duration-300 dark:bg-slate-600 bg-slate-100"
                       }
                     />
                   </div>
