@@ -28,7 +28,7 @@ export default function SkillModal(props: SkillModalProps): JSX.Element {
             {children}
           </div>
           <div className={"flex w-full h-[15%] justify-center items-center bg-slate-700 rounded-b-lg"}>
-            <div className={"w-10 h-10 rounded-full border-2 flex items-center justify-center font-bold text-xl text-white py-3"}>
+            <div className={"w-10 h-10 rounded-full border-2 flex items-center justify-center font-bold text-xl text-white py-3"} onClick={closeModal}>
               X
             </div>
           </div>

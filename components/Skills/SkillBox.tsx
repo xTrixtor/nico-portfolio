@@ -8,7 +8,6 @@ function SkillBox(skill: SkillModel): JSX.Element {
   return (
     <div
       className="flex justify-center py-6 duration-200 mx-10 rounded-xl border-green-300 hover:border-x-2 hover:cursor-pointer my-5 mx-2 skillCard"
-      onClick={() => setShowModal(!showModal)}
     >
       <div className="flex-col">
         <div className="flex justify-center mb-5">
@@ -24,7 +23,7 @@ function SkillBox(skill: SkillModel): JSX.Element {
         <SkillModal
           title={skill.name}
           isOpen={showModal}
-          closeModal={() => setShowModal(false)}
+          closeModal={() => setShowModal(!showModal)}
         >
           {skill.desc}
         </SkillModal>
