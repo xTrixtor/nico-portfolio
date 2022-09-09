@@ -44,14 +44,14 @@ function NavBar() {
         <Col className="mx-5 hidden tablet:inline-flex">
           {socialData.map((socialDataModel: NavBarSocialModel) => (
             <div>
-              <div className="px-1 flex ">
+              <a className="px-1 flex" href={socialDataModel.href}>
                 <i
                   className={
                     socialDataModel.icon +
                     " text-2xl duration-500 hover:text-black hover:bg-slate-100 rounded-full h-10 w-10 flex justify-center items-center z-20 text-slate-300"
                   }
                 ></i>
-              </div>
+              </a>
             </div>
           ))}
         </Col>

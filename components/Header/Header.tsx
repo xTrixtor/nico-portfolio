@@ -13,7 +13,7 @@ class Header extends Component {
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"
           />
-          <title>NicoLanding</title>
+          <title>boehnerN</title>
         </Head>
       </>
     );
