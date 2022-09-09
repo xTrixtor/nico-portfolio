@@ -35,10 +35,10 @@ export const stepGridData:StepGridModel[] = [
     },
     {
         src:"/images/extras/cypress/Cypress_Testing_Part1.png",
-        desc:"Neue Projekt Strucktur für Cypress"
+        desc:"Übersicht der Tests welche ausgeführt worden und ob diese bestanden haben"
     },
     {
         src:"/images/extras/cypress/Cypress_Testing_Part2.png",
-        desc:"Neue Projekt Strucktur für Cypress"
+        desc:"Zustand der Webseite nach einem Test"
     },
 ]

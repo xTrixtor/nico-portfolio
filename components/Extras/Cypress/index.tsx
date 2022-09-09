@@ -4,12 +4,12 @@ import StepGrid from "./StepGrid";
 
 export default function CypressBlog(): JSX.Element {
     return (
-        <div className={"mt-[75px]"}>
+        <div className={"tablet:mt-[75px]"}>
             <Section id={"cypress"} title={"Cypress"}>
                 <div className={"flex flex-col justify-center items-center px-10"}>
                     <img src={"/images/extras/cypress/cypress.io.png"}
                          className={"w-24 h-24 text-white m-5 bg-cover bg-center object-cover"}/>
-                    <div className={"block mx-10 my-3 text-xl font-semibold text-start"}>
+                    <div className={"block tablet:mx-10 my-3 tablet:text-xl text-sm font-semibold text-center"}>
                         Die Open-Source Lösung Cypress.io für automatisierte End-to-End-Webtests ist eine interessante
                         Alternative zu Selenium und ein All-in-one-Test-Framework. Bisher waren End-to-End-Tests
                         schwierig, mit Cypress konfiguriert und schreibt man Webtests, welche sich leicht debuggen lassen.
