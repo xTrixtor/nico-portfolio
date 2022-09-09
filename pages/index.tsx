@@ -9,13 +9,14 @@ import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import HomeButton from "../components/Home/HomeButton";
+import {navBarData} from "../components/NavBar/NavBarData";
 
 const Home: NextPage = () => {
     return (
         <>
             <Header/>
 
-            <NavBar/>
+            <NavBar navBarConfig={navBarData}/>
 
             <Landing/>
 

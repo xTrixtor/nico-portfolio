@@ -1,22 +1,10 @@
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 export default function datenschutz(): JSX.Element {
     return (
         <div className={"text-center"}>
-            <div id={"footer"}>
-                <div className={"text-3xl text-white font-bold py-5"}>
-                    Datenschutz
-                    <div
-                        id={"titleUnderline"}
-                        className={"flex justify-center items-center pb-3"}
-                    />
-                </div>
-                <div className={"pb-3"}>
-                    <a className={"btn btn-primary bg-brand duration-500 hover:bg-slate-400 border-0 hover:-translate-y-2 fa-regular fa-right-from-bracket"}
-                       href={"/"}>Zurück
-                    </a>
-                </div>
-            </div>
+            <Banner title={"Datenschutz"} buttonBoolean={true} buttonTitle={"Zurück"} buttonHref={"/"}/>
             <div className={"py-10 px-5 tablet:font-medium tablet:text-lg font-thin text-sm"}>
                 <h1>Datenschutzerklärung</h1><p>Wie wir mit Ihren personenbezogenen Daten umgehen, erläutern wir Ihnen
                 in dieser Datenschutzerklärung. Maßgabe ist das geltende Datenschutzrecht, insbesondere die

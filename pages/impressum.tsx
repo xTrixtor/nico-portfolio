@@ -1,21 +1,10 @@
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 export default function impressum(): JSX.Element {
     return (
-        <div className={"flex flex-col w-full h-[100vh]"}>
-            <div id={"footer"} className={"w-full h-[20%] flex flex-col justify-center items-center"}>
-                <div className={"text-3xl text-white font-bold py-5"}>
-                    Impressum
-                    <div
-                        id={"titleUnderline"}
-                        className={"flex justify-center items-center pb-3"}
-                    />
-                </div>
-                <div className={"pb-3"}>
-                    <a className={"btn btn-primary bg-brand duration-500 hover:bg-slate-400 border-0 hover:-translate-y-2"}
-                       href={"/"}>Zurück</a>
-                </div>
-            </div>
+        <div className={"text-center"}>
+            <Banner title={"Impressum"} buttonBoolean={true} buttonTitle={"Zurück"} buttonHref={"/"}/>
             <div className={"w-full h-full flex px-10 py-5 flex-col justify-evenly"}>
                 <div className={"flex flex-col tablet:text-2xl text-sm font-medium dark:text-white text-black py-5 items-center"}>
                     <div>Nico Böhner</div>

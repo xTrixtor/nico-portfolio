@@ -5,6 +5,7 @@ export const navBarData: NavBarModel[] = [
     {title: "Über mich", href: "#aboutMe"},
     {title: "Projekte", href: "#projects"},
     {title: "Kontakt", href: "#contact"},
+    {title: "Extras", href:"/extras"}
 ];
 
 export const socialData: NavBarSocialModel[] = [
