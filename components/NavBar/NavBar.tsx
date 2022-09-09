@@ -1,12 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { navBarData, socialData } from "./NavBarData";
 import { NavBarSocialModel } from "../../models/NavBarSocialModel";
 import { NavBarModel } from "../../models/NavBarModel";
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import NavBarFrame from "./NavBarFrame";
 
-function NavBar() {
+export interface NavBarProps{
+  navBarConfig:NavBarModel[];
+}
+
+function NavBar(props:NavBarProps) {
   const [showNavBar, setShowNavBar] = useState(false);
+  const {navBarConfig} = props;
   return (
     <NavBarFrame>
       <nav
@@ -26,7 +31,7 @@ function NavBar() {
         </Col>
         <Col className="">
           <ul className="tablet:flex hidden relative">
-            {navBarData.map((navBarItem: NavBarModel) => (
+            {navBarConfig.map((navBarItem: NavBarModel) => (
               <>
                 <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 text-xl duration-500 text-slate-300 navBarItem">
                   <a href={navBarItem.href}>{navBarItem.title}</a>
