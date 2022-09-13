@@ -13,6 +13,7 @@ class Header extends Component {
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
             rel="stylesheet"
           />
+          <link rel="stylesheet" href="/styles/globals.css"/>
           <title>boehnerN</title>
         </Head>
       </>
