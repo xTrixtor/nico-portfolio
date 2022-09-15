@@ -20,7 +20,7 @@ export const projectData:ProjectModel[] = [
     },
     {
         name:"Statistik Portal",
-        desc:"Web-Applkation zur Veranschaulichung von Daten",
+        desc:"Web-Applikation zur Veranschaulichung von Daten",
         year:2022,
         background:"bg-statistic",
         technologies:[".Net","C#","Blazor","DevExpress"],

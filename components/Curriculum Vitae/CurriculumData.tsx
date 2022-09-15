@@ -7,7 +7,7 @@ export const CurriculumData: CurriculumModel[] = [
     companyHref: "https://www.kerberry.de",
     from: "05.2022",
     until: renderUntilIcon(),
-    skills: ["React", "Next.JS", "Tailwind", "Cypress", "TypeScript"],
+    skills: ["React.JS", "Next.JS", "Tailwind", "Cypress", "TypeScript"],
   },
   {
     title: "Software Developer",
