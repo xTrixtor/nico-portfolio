@@ -19,9 +19,7 @@ export default class FormService {
             body: JSON.stringify({name, email, subject, message}),
         };
 
-        const api = axios.create({
-            baseURL: "https://boehnern.de"
-        });
+        const api = axios.create();
 
         return await api.post("/api/ContactForm", { name:name, email:email, subject:subject, message:message})
             .then(function (response:AxiosResponse) {
