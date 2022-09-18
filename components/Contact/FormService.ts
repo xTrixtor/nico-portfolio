@@ -1,31 +1,35 @@
-import { APIResponseModel } from "../../models/APIResponseModel";
+import {APIResponseModel} from "../../models/APIResponseModel";
+import axios, {AxiosResponse} from "axios";
 
 export interface FormValues {
-  name?: string;
-  email?: string;
-  subject?: string;
-  message?: string;
+    name?: string;
+    email?: string;
+    subject?: string;
+    message?: string;
 }
 
 export default class FormService {
-  public async sendForm(
-    values: FormValues
-  ): Promise<APIResponseModel | undefined> {
-    const { name, email, subject, message } = values;
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, subject, message }),
-    };
+    public async sendForm(
+        values: FormValues
+    ): Promise<APIResponseModel | any> {
+        const {name, email, subject, message} = values;
+        const requestOptions = {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({name, email, subject, message}),
+        };
 
-    return await fetch(
-      "https://nboehner.vercel.app/api/ContactForm",
-      requestOptions
-    )
-      .then((response) => response.json())
-      .catch((error) => {
-        console.error("Error:", error);
-        return undefined;
-      });
-  }
+        const api = axios.create({
+            baseURL: "https://boehnern.de"
+        });
+
+        return await api.post("/api/ContactForm", { name:name, email:email, subject:subject, message:message})
+            .then(function (response:AxiosResponse) {
+            return response.data as APIResponseModel
+        })
+            .catch(function (error) {
+                return error
+            });
+
+    }
 }
