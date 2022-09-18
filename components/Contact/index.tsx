@@ -4,6 +4,7 @@ import Section from "../Section";
 import { useForm } from "react-hook-form";
 import FormService, { FormValues } from "./FormService";
 import { useState } from "react";
+import {APIResponseModel} from "../../models/APIResponseModel";
 
 export default function Contact(): JSX.Element {
   type FormData = {

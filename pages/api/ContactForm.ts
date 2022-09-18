@@ -1,25 +1,7 @@
 import { ContactFormModel } from "../../models/ContactFormModel";
 import { APIResponseModel } from "../../models/APIResponseModel";
-const corsLib = require("cors");
-
-const cors = corsLib({
-  methods: ["POST"],
-});
-
-function runMiddleware(req: any, res: any, fn: any) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
-
-      return resolve(result);
-    });
-  });
-}
 
 export default async function handler(req: any, res: any) {
-  await runMiddleware(req, res, cors);
 
   if (req.method !== "POST") {
     sendResponse(res, 405, "Method not allowed");
@@ -30,7 +12,6 @@ export default async function handler(req: any, res: any) {
     let contactData: ContactFormModel = {};
     contactData = JSON.parse(JSON.stringify(req.body));
     await sendEmail(contactData, res);
-  } else {
   }
 }
 
@@ -55,7 +36,7 @@ const sendEmail = async (
     process.env.PUBLIC_KEY_JETMAIL === null ||
     process.env.PRIVATE_KEY_JETMAIL === null
   )
-    sendResponse(res, 500, "MailJetKey is null");
+    sendResponse(res, 400, "Etwas ist schief gelaufen");
 
   const mailjet = require("node-mailjet").connect(
     process.env.PUBLIC_KEY_JETMAIL,
