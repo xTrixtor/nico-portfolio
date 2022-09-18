@@ -20,7 +20,6 @@ export default class FormService {
         };
 
         const api = axios.create();
-
         return await api.post("/api/ContactForm", { name:name, email:email, subject:subject, message:message})
             .then(function (response:AxiosResponse) {
             return response.data as APIResponseModel
