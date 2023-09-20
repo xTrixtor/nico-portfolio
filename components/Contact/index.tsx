@@ -56,9 +56,10 @@ export default function Contact(): JSX.Element {
         >
           <div className="flex-col h-full flex tablet:w-3/4 w-full justify-center">
             {ContactOptions.map(
-              (contactOption: ContactOptionModel): JSX.Element => {
+              (contactOption: ContactOptionModel, key:number): JSX.Element => {
                 return (
                   <div
+                    key={key}
                     className={
                       "flex-row flex dark:bg-slate-800 bg-slate-100 rounded-lg my-3 tablet:mx-8 mx-3 border-white border-2 shadow-md shadow-slate-50/50"
                     }

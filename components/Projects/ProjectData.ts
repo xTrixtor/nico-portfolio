@@ -1,37 +1,36 @@
-import {ProjectModel} from "../../models/ProjectModel";
+import { ProjectModel } from "../../models/ProjectModel";
 
-export const projectData:ProjectModel[] = [
-
-    {
-        name:"TextBlock Leitfaden",
-        desc:"Dynamisches zusammensetzen eines Leitfadens anhand von Parameter",
-        year:2020,
-        background:"bg-block",
-        technologies:[".Net","C#","SQL","Dapper"],
-        animation:"fadeFromTopAnimation"
-    },
-    {
-        name:"Urlaubsportal",
-        desc:"Verwaltung der Urlaube mit einem Click",
-        year:2021,
-        background:"bg-vacation",
-        technologies:[".Net","C#","Dapper","SQL"],
-        animation:"fadeFromBottomAnimation"
-    },
-    {
-        name:"Statistik Portal",
-        desc:"Web-Applikation zur Veranschaulichung von Daten",
-        year:2022,
-        background:"bg-statistic",
-        technologies:[".Net","C#","Blazor","DevExpress"],
-        animation:"fadeInAnimation"
-    },
-    {
-        name:"Portfolio",
-        desc:"Ein kleine Präsenz im Internet",
-        year:2022,
-        background:"bg-portfolio",
-        technologies:["React.JS","Next.Js","Tailwind","Cypress"],
-        animation:"fadeFromTopAnimation"
-    },
-]
+export const projectData: ProjectModel[] = [
+  {
+    name: "Portfolio",
+    desc: "Ein kleine Präsenz im Internet",
+    year: 2022,
+    href: "",
+    background: "bg-[url(/images/portfolio.jpg)]",
+    technologies: ["React.JS", "Next.Js", "Tailwind", "Cypress"],
+  },
+  {
+    name: "Home2Home",
+    desc: "Homepage für eine Umzugsfirma",
+    year: 2023,
+    href: "http://dev.ladam.de",
+    background: "bg-[url(/images/home2home.jpg)]",
+    technologies: ["Vue 3", "GoogleApi", "Docker"],
+  },
+  {
+    name: "MoCo",
+    desc: "Website zur Verwaltung von Monatlichen Kosten (wip)",
+    year: 2023,
+    href: "",
+    background: "bg-[url(/images/moco.jpg)]",
+    technologies: ["Nuxt.Js", "C#", ".Net", "Entity-Framwork"],
+  },
+  {
+    name: "Test Projekt für Interview",
+    desc: "Restful-Web-Api mit Keycloak",
+    year: 2023,
+    href: "https://spring.boehnern.de/swagger-ui/index.html",
+    background: "bg-[url(/images/test.jpg)]",
+    technologies: ["Java", "Spring Boot", "Keycloak", "Docker"],
+  },
+];

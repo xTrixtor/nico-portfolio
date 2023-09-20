@@ -29,27 +29,24 @@ function NavBar(props:NavBarProps) {
             </p>
           </a>
         </Col>
-        <Col className="">
+        <Col>
           <ul className="tablet:flex hidden relative">
-            {navBarConfig.map((navBarItem: NavBarModel) => (
-              <>
-                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 text-xl duration-500 text-slate-300 navBarItem">
+            {navBarConfig.map((navBarItem: NavBarModel, key:number) => (
+                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 text-xl duration-300 text-slate-300 navBarItem hover:text-brand hover:font-black font-normal" key={key}>
                   <a href={navBarItem.href}>{navBarItem.title}</a>
                 </li>
-              </>
             ))}
           </ul>
         </Col>
           <i
               className={`${
                   showNavBar ? "fa-solid fa-xmark border-2" : "fa-solid fa-bars"
-              } text-2xl rounded-lg mx-auto tablet:hidden inline-flex px-4 mx-2`}
+              } text-2xl rounded-lg tablet:hidden inline-flex px-4 mx-2`}
               onClick={() => setShowNavBar(!showNavBar)}
           />
-        <Col className="mx-5 hidden tablet:inline-flex">
-          {socialData.map((socialDataModel: NavBarSocialModel) => (
-            <div>
-              <a className="px-1 flex" href={socialDataModel.href}>
+        <Col className="mx-5 hidden tablet:flex">
+          {socialData.map((socialDataModel: NavBarSocialModel, key:number) => (
+              <a className="px-1 flex" href={socialDataModel.href} key={key}>
                 <i
                   className={
                     socialDataModel.icon +
@@ -57,19 +54,16 @@ function NavBar(props:NavBarProps) {
                   }
                 ></i>
               </a>
-            </div>
           ))}
         </Col>
       </nav>
       {showNavBar ? (
         <div className="flex items-center text-center w-full justify-center px-4 bg-base-300 font-medium top-0 bottom-0 z-30">
           <ul className="items-center tablet:hidden">
-            {navBarData.map((navBarItem: NavBarModel) => (
-              <>
-                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand font-semibold">
+            {navBarData.map((navBarItem: NavBarModel, key:number) => (
+                <li className="tablet:mx-3 mx-0 my-6 tablet:my-0 hover:text-brand font-semibold" key={key}>
                   <a href={navBarItem.href}>{navBarItem.title}</a>
                 </li>
-              </>
             ))}
           </ul>
         </div>

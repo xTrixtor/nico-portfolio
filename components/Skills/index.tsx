@@ -8,10 +8,10 @@ class Skills extends Component {
   render() {
     return (
       <Section id="skills" title={"Skills"}>
-        <div className="grid tablet:grid-cols-5 grid-cols-2">
+        <div className="grid tablet:grid-cols-3 grid-cols-2">
           {skillsData.map((skill: SkillModel, key: number): JSX.Element => {
             return (
-              <SkillBox name={skill.name} desc={skill.desc} icon={skill.icon} />
+              <SkillBox name={skill.name} desc={skill.desc} icon={skill.icon} key={key} />
             );
           })}
         </div>

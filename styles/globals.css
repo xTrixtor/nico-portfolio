@@ -48,19 +48,15 @@ body {
     rgba(51, 65, 85, 0.6),
     rgba(148, 163, 184, 0.3)
   );
-  @apply bg-gradient-to-b from-slate-500/[.3] to-slate-600/[.8];
-  @apply h-[60px];
+  @apply bg-gradient-to-b from-slate-500/[.3] to-slate-600/[.8] h-[60px];
 }
 
 .isSticky #navBar a{
-  @apply text-white;
-  @apply dark:text-white;
-  @apply font-bold;
+  @apply text-white dark:text-white hover:text-brand duration-100 hover:font-semibold;
 }
 
 .isSticky #navBar i{
-  @apply text-white;
-  @apply dark:text-white;
+  @apply text-white dark:text-white;
 }
 
 .isSticky #navBar li:hover {
@@ -203,7 +199,7 @@ body {
 }
 
 .skillCard:hover .skillIcon {
-  @apply bg-green-300;
+  @apply bg-brand duration-300 -translate-y-2 shadow-2xl shadow-brand;
 }
 
 .glowUpAnimation {
@@ -265,49 +261,6 @@ img {
   background-position: center, center;
 }
 
-.bg-vacation{
-  background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.8) 0%,
-          rgba(255, 255, 255, 0.2) 100%
-  ),
-  url("/images/Vacation.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-}
-.bg-block{
-  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.4) 100%),
-  url("/images/block.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-}
 
-.bg-statistic{
-  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.2) 100%),
-  url("/images/statistic.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-}
 
-.bg-portfolio{
-  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%,rgba(64, 64, 64, 0.2) 100%),
-  url("/images/portfolio.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-}
 
-#footer{
-  background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.8) 0%,
-          rgba(64, 64, 64, 0.5) 100%
-  ),
-  url("/images/light.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-position: center;
-}

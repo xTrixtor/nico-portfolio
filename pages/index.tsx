@@ -28,8 +28,6 @@ const Home: NextPage = () => {
 
             <SectionSeparator/>
 
-            <Contact/>
-
             <Footer/>
 
             <HomeButton/>

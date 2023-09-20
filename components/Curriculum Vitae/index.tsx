@@ -39,10 +39,11 @@ export default function CurriculumVitae(): JSX.Element {
           </div>
         </div>
         <div className="row-span-2">
-          {CurriculumData.map((curriculumData: CurriculumModel) => {
+          {CurriculumData.map((curriculumData: CurriculumModel, key:number) => {
             const { ref: myRef, inView: myElementIsVisible } = useInView();
             return (
               <div
+                key={key}
                 className="text-xl tracking-wide flex justify-center items-center pl-14"
                 ref={myRef}
               >
@@ -73,9 +74,9 @@ export default function CurriculumVitae(): JSX.Element {
                     )
                   </CurriculumStepPoint>
 
-                  {curriculumData.skills.map((skill: string): JSX.Element => {
+                  {curriculumData.skills.map((skill: string, key:number): JSX.Element => {
                     return (
-                      <div className={"flex"}>
+                      <div className={"flex"} key={key}>
                         <li className={"pl-10 text-brand list-desc"}></li>
                         <div className={"font-semibold tablet:text-lg text-sm"}>
                           {skill}
